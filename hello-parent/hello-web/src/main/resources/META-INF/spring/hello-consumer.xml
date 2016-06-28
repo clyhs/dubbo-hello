@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!-- 设置应用程序名称，拥有者，组织 -->
+    <dubbo:application name="hello-web" owner="hello" organization="tiancom.com"/>
+    <!-- 设置zookeeper注册中心 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+
+    <!-- 自动扫描包 -->
+    <dubbo:annotation package="org.hello.service" />
+    
+    <dubbo:reference id="helloService" interface="org.hello.api.HelloService" group="*" protocol="dubbo" >
+        <dubbo:method name="hello" merger="true" />
+    </dubbo:reference>
+	<bean id="demoService" class="org.hello.service.DemoService">
+        <property name="helloService" ref="helloService"/>
+    </bean>
+</beans>
+
+
+
