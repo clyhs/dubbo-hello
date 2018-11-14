@@ -1,0 +1,3 @@
+#Dubbo Registry Cache
+#Wed Nov 14 15:15:58 CST 2018
+org.hello.api.HelloService\:1.0.0=empty\://172.20.10.5\:20880/org.hello.api.HelloService?anyhost\=true&application\=hello-service&category\=configurators&check\=false&dubbo\=2.5.3&interface\=org.hello.api.HelloService&methods\=hello&organization\=tiancom.com&owner\=hello&pid\=18032&revision\=1.0.0&side\=provider&timestamp\=1542179757298&version\=1.0.0

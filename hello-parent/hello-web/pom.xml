@@ -21,6 +21,10 @@
 			<artifactId>hello-api</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.tiamcom</groupId>
+			<artifactId>hello-consumer</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
@@ -31,40 +35,7 @@
 			<version>2.3.18</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>3.2.9.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>3.2.9.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-orm</artifactId>
-			<version>3.2.9.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-oxm</artifactId>
-			<version>3.2.9.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context-support</artifactId>
-			<version>3.2.9.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc-portlet</artifactId>
-			<version>3.2.9.RELEASE</version>
-		</dependency>
+		
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-core-asl</artifactId>

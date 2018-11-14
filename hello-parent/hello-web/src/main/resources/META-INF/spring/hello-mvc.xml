@@ -21,7 +21,7 @@
        http://www.springframework.org/schema/cache 
        http://www.springframework.org/schema/cache/spring-cache-3.2.xsd">
 	<mvc:annotation-driven />
-	<context:component-scan base-package="org.hello.web" />
+	<context:component-scan base-package="org.hello.comsumer" />
 	<bean
 		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
 	<bean
